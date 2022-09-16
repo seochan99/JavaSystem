@@ -18,6 +18,7 @@ public class week2_2 {
 		System.out.println(second + "초입니다.");
 
 		scanner.close();
+	
 
 	}
 
