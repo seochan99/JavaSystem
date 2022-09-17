@@ -1,7 +1,6 @@
 package switchCasePractice;
 import java.util.Scanner;
 
-
 public class rockSisPaper {
 
 	public static void main(String[] args) {
@@ -23,8 +22,6 @@ public class rockSisPaper {
 				System.out.println(0);
 			}
 		scanner.close();
-
-
 	}
 
 }

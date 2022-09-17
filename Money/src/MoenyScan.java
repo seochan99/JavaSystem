@@ -2,13 +2,12 @@ import java.util.Scanner;
 
 public class MoenyScan {
 	public static void main(String[] args) {
-		System.out.println("얼마를 입금하시겠습니까?");
+		System.out.print("정수의 돈을 입력해주세요.");
 		Scanner scanner = new Scanner(System.in);
 		
 		// 돈 입력받음 
 		int money = scanner.nextInt();
 		
-		System.out.print("입금한 돈 : "+ money);
 		int oman = 0;
 		int man = 0;
 		int ocheon = 0;
@@ -40,9 +39,9 @@ public class MoenyScan {
 	    System.out.println("오십원 : "+oship);
 	    System.out.println("십원 : "+ship);
 	    System.out.println("일원 : "+one);
+	
 	    
 		// 스캐너 닫아주기 
 		scanner.close();
 	}
-
 }
