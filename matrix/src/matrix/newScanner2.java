@@ -1,9 +1,21 @@
 package matrix;
+import java.util.Scanner;
+
 
 public class newScanner2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		System.out.println("이름, 나이, 몸무게 입력 ");
+		Scanner sc = new Scanner(System.in);
+		
+		String name = sc.next();
+		int age = sc.nextInt();
+		double weight = sc.nextDouble();
+		
+		
+		System.out.println("Message\n"+name+"\n"+age+"\n"+weight);
+		
+		
 
 	}
 
