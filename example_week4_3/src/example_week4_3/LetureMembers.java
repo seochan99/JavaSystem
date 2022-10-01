@@ -55,6 +55,7 @@ public class LetureMembers {
 		        	
 		        	System.out.println(); 
 		        	}
+		        
 			}else 
 			{
 				System.out.println("2이상 12이하의 값을 입력하지 않았으므로 프로그램을 종료합니다.");
