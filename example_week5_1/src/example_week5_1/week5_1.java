@@ -18,23 +18,15 @@ public class week5_1 {
 		StringTokenizer stk = new StringTokenizer(munja,",");
 		
 		// 남아있는 토큰 개수만큼 반환 
-		int num = stk.countTokens();
-		
-		// num큼의 새 문자열 생성 
-		String arr[] = new String[num];
-				
+		int num = stk.countTokens();				
 		
 		for(int i=0;i<num;i++)
 		{
-			 
 			// 아직 토근에는 {,}와 같은숫자가 아닌 값들이 저장되어있음
-			// 그렇기에 정규식 사용해서 replaceAll, [^0-9] 정규식 사용해 숫자 외 문자 모두 제거 후 arr에 넣 
-			arr[i] = stk.nextToken().replaceAll("[^0-9]", "");
-			
+			// 그렇기에 정규식 사용해서 replaceAll, [^0-9] 정규식 사용해 숫자 외 문자 모두 제거
 			// 문자열 출
-			System.out.print(arr[i]+" ");
+			System.out.print(stk.nextToken().replaceAll("[^0-9]", "")+" ");
 		}
-		
 		//스캐너 닫기 
 		sc.close(); 
 
