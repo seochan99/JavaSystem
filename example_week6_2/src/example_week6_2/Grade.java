@@ -21,3 +21,5 @@ public class Grade {
 			return (double)((this.math + this.science + this.english)/3);
 		}
 }
+
+
