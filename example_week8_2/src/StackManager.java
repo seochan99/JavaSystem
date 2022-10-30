@@ -1,5 +1,3 @@
-package example_week8_2;
-
 import java.util.Vector;
 
 interface Istack<T>{
@@ -10,7 +8,7 @@ interface Istack<T>{
 // Istack 인터페이스 구
 class MyStack<T> implements Istack<T>{
 	// 벡터생성 
-	Vector<T> v = new Vector<E>();
+	Vector<T> v = new Vector<T>();
 	T data; 
 	
 	@Override
@@ -35,14 +33,17 @@ class MyStack<T> implements Istack<T>{
 
 	@Override
 	public Boolean push(T ob) {
-		// 배열 전체용량 초과한지 체크 
-		if(v.capacity() > 10) {
+		// 배열 사이즈 체크 
+		if(v.size() >= 10) {
 			//꽉차면 False 반환 
 			System.out.println("용량 초과"); 
 			return false;
 		}else {
 			//요소 넣고 true반환
+			
 			v.add(ob);
+			// 작동방식 확
+//			System.out.println("size : "+v.size() + " ob : "+ob); 
 			return true;
 		}
 	}
@@ -68,7 +69,6 @@ public class StackManager {
 			if(n==null)
 				break;
 			System.out.print(n + " ");
-			
 		}
 		
 

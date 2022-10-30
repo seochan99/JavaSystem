@@ -1,5 +1,3 @@
-package example_week8_1;
-
 // ArrayList배열 이용 
 import java.util.ArrayList;
 
