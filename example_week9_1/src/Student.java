@@ -36,7 +36,4 @@ public class Student {
 			rank = 'C';
 		}
 	}
-		
-	
-
 }

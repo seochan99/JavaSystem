@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.Scanner;
 import java.util.ArrayList;
 
+
 public class StudentManager {
 
 	public static void main(String[] args) {
@@ -12,9 +13,8 @@ public class StudentManager {
 		// output.txt파일 생성하기 
 	    File outFile = new File("/Users/seochan/Documents/Github/JavaSystem/example_week9_1/src/output.txt");
 
-		// 결과 : 배열 or ArrayList에 저장 -> output.txt 출력 
+		// 결과 : ArrayList에 저장 -> output.txt 출력 
 			try {
-				
 				// 스캐너 클래스를 이용하여 파일가져오기, 파일의 텍스트를 delimiter를 이용하여 자르기 위해 
 				// input.txt를 입력받음 
 				Scanner sc = new Scanner(new File("/Users/seochan/Documents/Github/JavaSystem/example_week9_1/src/input.txt"));
@@ -103,6 +103,8 @@ public class StudentManager {
 		        	}
 		        }
 		        
+
+		        
 		        //파일 작성,FileWriter가 outFile가져옴  
 		        FileWriter fw = new FileWriter(outFile);
 		        
@@ -150,6 +152,9 @@ public class StudentManager {
 		        }
 		        // FileWriter 닫아주기 
 		       fw.close();
+		       
+		        // 스캐너 닫아주기 
+		        sc.close();
 		        
 			}// 파일 못찾을 시 예외처리 
 			catch (FileNotFoundException e) {
@@ -158,7 +163,6 @@ public class StudentManager {
 			catch (IOException e) {
 				e.printStackTrace();
 			}
-
 	}
 
 }
