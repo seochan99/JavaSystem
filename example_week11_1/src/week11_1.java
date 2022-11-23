@@ -1,8 +1,6 @@
 import javax.swing.*; //swing
 
 public class week11_1 extends JFrame{
-	//  JFrame이 serializable을 상속 받으므로아래 문구를 작성해야 
-	private static final long serialVersionUID = 1L;
 
 	// 생성자 호출 
     public week11_1(){
@@ -17,8 +15,8 @@ public class week11_1 extends JFrame{
     }
     
 	public static void main(String[] args) {
+		// 객체 생성 
 		new week11_1();
-
 	}
 
 }
