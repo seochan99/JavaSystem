@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class week11_2 extends JFrame{
-	
+	// 생성자 만들
 	public week11_2(){
     	// 제목 설정 
         setTitle("Random Labels");
@@ -48,7 +48,7 @@ public class week11_2 extends JFrame{
 	}
 
 	public static void main(String[] args) {
-		// 객체 생
+		// 객체 생성 
 		new week11_2();
 		
 

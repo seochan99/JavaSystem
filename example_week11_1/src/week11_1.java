@@ -2,7 +2,7 @@ import javax.swing.*; //swing
 
 public class week11_1 extends JFrame{
 
-	// 생성자 호출 
+	// 생성자 만들기  
     public week11_1(){
     	// 제목 설정 
         setTitle("Let’s study Java");
