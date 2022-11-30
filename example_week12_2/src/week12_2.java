@@ -102,13 +102,15 @@ public class week12_2 extends JFrame{
              // 위치, 크기 설정 
              label.setBounds(50, 30+(i*19), 50, 20);
              
-             // textfield 생성,라벨 가운데 정렬 진행, 크기위치 설정 
+             // textfield 생성,라벨 가운데 정렬 진행, 크기위치 설정, 초기 0 설정  
              InputField[i]=new JTextField("0");
              InputField[i].setHorizontalAlignment(JTextField.CENTER);
              InputField[i].setBounds(120,30+(i*19),70,20);
              // 라벨, 필드 추가하
              c.add(label);
              c.add(InputField[i]);
+             
+             // 체크박스 생ㅇ성 
          }
 
          // 위치, 크기 설정 

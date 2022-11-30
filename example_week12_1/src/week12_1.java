@@ -23,7 +23,7 @@ public class week12_1 extends JFrame {
         // 콘테이너 생성 
         Container c = getContentPane();
         
-        // layout설정, 
+        // flow layout설정, 
         c.setLayout(new FlowLayout());
 
         // KeyListener()를 사용하면 keyPressed, Released, Typed 인터페이스 전부를 완성해야함
