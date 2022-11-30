@@ -49,24 +49,16 @@ public class week12_2 extends JFrame{
          
          // 계산 버튼 생성, 크기, 위치 설정 
          JButton btn = new JButton("계산");
-         btn.setSize(73,20);
-         btn.setLocation(205,20);
+         btn.setBounds(205, 20, 73, 20);
          
          //버튼 클릭시 동작리스너 설정  
          btn.addActionListener(new ActionListener() {
         	 
              @Override
-             public void actionPerformed(ActionEvent e) {
-            	 // input에 처음 textfiled[0]번째에 입력된 text가져오기 
-                 String inputMoney = InputField[0].getText();
-                 
-                 // 입력된 돈 길이가 0보다 작으면 0 반환  
-                 if(inputMoney.length()==0)
-                     return;
-               
+             public void actionPerformed(ActionEvent e) {               
                  try {
                 	  // moeny에 입력한 돈 interger형으로 저장하기 
-                     int money =Integer.parseInt(inputMoney);
+                     int money =Integer.parseInt(InputField[0].getText());
                      int cnt;
 
                      // 계산 알고리즘, 돈 정수형 만큼 반복진행 
@@ -108,12 +100,12 @@ public class week12_2 extends JFrame{
              label = new JLabel(moneyStr[i]);
              label.setHorizontalAlignment(JLabel.RIGHT);
              // 위치, 크기 설정 
-             label.setBounds(50, 30+(i*20), 50, 20);
+             label.setBounds(50, 30+(i*19), 50, 20);
              
              // textfield 생성,라벨 가운데 정렬 진행, 크기위치 설정 
-             InputField[i]=new JTextField(null);
+             InputField[i]=new JTextField("0");
              InputField[i].setHorizontalAlignment(JTextField.CENTER);
-             InputField[i].setBounds(120,30+(i*20),70,20);
+             InputField[i].setBounds(120,30+(i*19),70,20);
              // 라벨, 필드 추가하
              c.add(label);
              c.add(InputField[i]);
