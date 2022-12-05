@@ -19,9 +19,6 @@ public class ex1 {
 		GenericPrintHere04<Integer> qqq = new GenericPrintHere04<>();
 		qqq.PrintHere(8811);
 		GenericPrintHere04<Double> aaa = new GenericPrintHere04<>();
-		aaa.PrintHere(7477.5);
-		
+		aaa.PrintHere(7477.5);	
 	}
-			
-			
 }
