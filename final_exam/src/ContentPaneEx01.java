@@ -26,7 +26,7 @@ public class ContentPaneEx01 extends JFrame{
 		contentPane.add(MessageLabel);
 		
 		//OKButton.addActionListener(new OKButtonActionListenr());
-		// 무명 클래스 
+//		 무명 클래스 
 //	OKButton.addActionListener(new ActionListener() {
 //		public void actionPerformed(ActionEvent e) {
 //			JButton b = (JButton)e.getSource();
